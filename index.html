@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>N8N Elite | 150+ Elite Automation Templates</title>
+  <!-- Google Fonts + Tailwind + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background: #0c0c0c; scroll-behavior: smooth; }
+    .bg-dark-elevated { background: #121212; }
+    .bg-card { background: #1a1a1a; }
+    .border-dim { border-color: rgba(255,255,255,0.06); }
+    .text-soft-white { color: #e8e8e8; }
+    .text-dim { color: #a0a0a0; }
+    .card-hover { transition: all 0.3s cubic-bezier(0.2, 0, 0, 0.08); }
+    .card-hover:hover { transform: translateY(-5px); background: #1f1f1f; border-color: #2c2c2c; box-shadow: 0 20px 30px -12px rgba(0,0,0,0.5); }
+    .btn-primary-dark { background: #ffffff; color: #0a0a0a; border-radius: 40px; transition: all 0.25s; font-weight: 600; }
+    .btn-primary-dark:hover { background: #e0e0e0; transform: scale(0.98); box-shadow: 0 8px 20px rgba(255,255,255,0.05); }
+    .btn-outline { border: 1px solid #333333; background: transparent; border-radius: 40px; transition: 0.2s; color: #dddddd; }
+    .btn-outline:hover { background: #1f1f1f; border-color: #555; color: white; }
+    .badge-dark { background: #1e1e1e; border-radius: 100px; padding: 4px 12px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.01em; color: #bbbbbb; border: 1px solid #2a2a2a; }
+    .feature-icon-dark { background: #1c1c1c; border-radius: 20px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1px solid #2c2c2c; color: #dddddd; }
+    .questionnaire-card-dark { background: #131313; border-radius: 28px; border: 1px solid #262626; box-shadow: 0 15px 30px -12px rgba(0,0,0,0.4); }
+    input, select, textarea { background: #0f0f0f; border: 1px solid #2a2a2a; border-radius: 20px; padding: 12px 18px; color: #f0f0f0; transition: all 0.2s; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #5a5a5a; box-shadow: 0 0 0 3px rgba(255,255,255,0.05); }
+    .accordion-item { border-bottom: 1px solid #252525; transition: 0.2s; }
+    .accordion-trigger { cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; font-weight: 500; color: #e0e0e0; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; color: #aaa; padding: 0 0 0 0; }
+    .accordion-item.active .accordion-content { max-height: 280px; padding-bottom: 1.2rem; }
+    .accordion-item.active .accordion-icon i { transform: rotate(180deg); }
+    .accordion-icon i { transition: transform 0.25s; }
+    .glow-text-light { text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+    hr { border-color: #222; }
+  </style>
+</head>
+<body class="antialiased bg-black text-gray-200">
+
+  <!-- Navigation (Dark) -->
+  <nav class="w-full py-5 px-6 md:px-10 lg:px-20 border-b border-[#1f1f1f] sticky top-0 bg-black/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center"><span class="text-black text-lg font-bold">⚡</span></div>
+        <span class="font-semibold text-xl tracking-tight text-white">N8N<span class="font-light text-gray-400">Elite</span></span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+        <a href="#benefits" class="hover:text-white transition">Benefits</a>
+        <a href="#templates" class="hover:text-white transition">Templates</a>
+        <a href="#quiz" class="hover:text-white transition">Finder Quiz</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </div>
+      <a href="https://superprofile.bio/vp/n8n-forge-%E2%80%94-150--premium-automation-templates" class="btn-primary-dark px-5 py-2 text-sm font-medium hidden md:inline-block">Get Access →</a>
+      <button class="md:hidden text-2xl text-white">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Dark Tone) -->
+  <section class="px-6 md:px-10 lg:px-20 pt-16 pb-20 lg:pt-24 lg:pb-28 bg-black">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="badge-dark inline-flex mb-5 gap-1"><i class="fas fa-crown text-xs"></i> <span>150+ production-ready workflows</span></div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">Deploy powerful automation <span class="border-b-2 border-white/30">in minutes</span>, not weeks.</h1>
+        <p class="text-lg text-gray-400 mt-6 max-w-lg leading-relaxed">Stop building from scratch. Get 150+ premium N8N templates — AI agents, CRM sync, scraping, social media & more. Production-ready, documented, plug & play.</p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#pricing" class="btn-primary-dark px-8 py-3 font-semibold text-base">🚀 Explore templates →</a>
+          <a href="#quiz" class="btn-outline px-7 py-3 font-medium text-base">✨ Take the workflow quiz</a>
+        </div>
+        <div class="flex items-center gap-5 mt-8 text-sm text-gray-500">
+          <div><i class="fas fa-database mr-1"></i> 150+ Templates</div>
+          <div><i class="fas fa-clock mr-1"></i> Lifetime updates</div>
+          <div><i class="fas fa-headset mr-1"></i> Priority support</div>
+        </div>
+      </div>
+      <div class="relative flex justify-center">
+        <div class="bg-[#121212] rounded-3xl shadow-2xl shadow-black/50 border border-gray-800 p-3 w-full max-w-md">
+          <div class="bg-[#050505] rounded-2xl p-4 text-white border border-gray-800">
+            <div class="flex justify-between items-center text-xs text-gray-400"><span>n8n workflow.json</span><i class="fas fa-code"></i></div>
+            <div class="mt-3 space-y-2 font-mono text-xs">
+              <div class="flex gap-2"><span class="text-emerald-400">✓</span> "nodes": [ "HTTP Request", "OpenAI", "Telegram" ]</div>
+              <div class="flex gap-2"><span class="text-emerald-400">✓</span> "AI Agent": "sales_assistant"</div>
+              <div class="flex gap-2"><span class="text-emerald-400">✓</span> "triggers": "webhook, schedule"</div>
+            </div>
+          </div>
+          <div class="mt-2 text-center text-[11px] text-gray-600 font-mono">pre-built • fully customizable</div>
+        </div>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-white/5 rounded-full blur-3xl -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="px-6 md:px-10 lg:px-20 py-20 bg-[#0a0a0a] border-t border-[#181818]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="badge-dark">why n8n templates?</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 tracking-tight text-white">The ultimate automation <br> shortcut for builders</h2>
+        <p class="text-gray-400 mt-4">Engineered to save 100+ hours of integration & debugging. Start scaling now.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+        <div class="card-hover bg-[#111111] p-6 rounded-2xl border border-[#232323]">
+          <div class="feature-icon-dark"><i class="fas fa-bolt text-xl"></i></div>
+          <h3 class="text-xl font-semibold mt-5 text-white">Ready-to-run nodes</h3>
+          <p class="text-gray-400 text-sm mt-2">Every template includes pre-configured webhooks, error handling & credentials mapping.</p>
+        </div>
+        <div class="card-hover bg-[#111111] p-6 rounded-2xl border border-[#232323]">
+          <div class="feature-icon-dark"><i class="fas fa-chart-line text-xl"></i></div>
+          <h3 class="text-xl font-semibold mt-5 text-white">Scalable architecture</h3>
+          <p class="text-gray-400 text-sm mt-2">Designed for high volume — from lead gen to e-commerce automation, we got you.</p>
+        </div>
+        <div class="card-hover bg-[#111111] p-6 rounded-2xl border border-[#232323]">
+          <div class="feature-icon-dark"><i class="fas fa-layer-group text-xl"></i></div>
+          <h3 class="text-xl font-semibold mt-5 text-white">150+ niche workflows</h3>
+          <p class="text-gray-400 text-sm mt-2">SEO, AI agents, social posting, CRM, scraping, Shopify, Mailchimp, and more.</p>
+        </div>
+        <div class="card-hover bg-[#111111] p-6 rounded-2xl border border-[#232323]">
+          <div class="feature-icon-dark"><i class="fas fa-file-alt text-xl"></i></div>
+          <h3 class="text-xl font-semibold mt-5 text-white">Step-by-step guides</h3>
+          <p class="text-gray-400 text-sm mt-2">Every template includes docs & video walkthroughs — no developer needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Showcase (what I provide) -->
+  <section id="templates" class="px-6 md:px-10 lg:px-20 py-20 bg-[#070707]">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap justify-between items-end gap-4 mb-12">
+        <div>
+          <span class="badge-dark">📦 150+ templates included</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2 text-white">Everything you need to automate</h2>
+          <p class="text-gray-400 max-w-xl mt-2">From AI content pipelines to lead qualification & internal tools.</p>
+        </div>
+        <a href="#pricing" class="text-gray-300 font-medium border-b border-gray-600 hover:text-white">View full library →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fas fa-robot text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">AI Agents Suite</h3><p class="text-sm text-gray-400 mt-1">GPT-4 research, support bot, summarizer, and custom agent flows.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">6 templates</span></div></div>
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fab fa-google text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">CRM & Sales Sync</h3><p class="text-sm text-gray-400 mt-1">HubSpot, Pipedrive, Salesforce automation — lead enrichment & deal updates.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">18 templates</span></div></div>
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fas fa-chart-simple text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">SEO & Content</h3><p class="text-sm text-gray-400 mt-1">Automated rank tracking, content briefs, backlink monitor, and GSC integration.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">12 templates</span></div></div>
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fab fa-telegram text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">Social Media Auto-Poster</h3><p class="text-sm text-gray-400 mt-1">LinkedIn, Twitter, Facebook — schedule posts, AI captions & analytics.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">9 templates</span></div></div>
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fas fa-database text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">Web Scraping Pipelines</h3><p class="text-sm text-gray-400 mt-1">Scrape product data, SERP results, or news → auto store in Google Sheets/Airtable.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">14 templates</span></div></div>
+        <div class="bg-[#111111] rounded-2xl p-6 border border-[#262626] card-hover"><i class="fas fa-envelope-open-text text-2xl mb-3 text-gray-200"></i><h3 class="font-bold text-lg text-white">Email Marketing Flows</h3><p class="text-sm text-gray-400 mt-1">ConvertKit, Mailchimp, ActiveCampaign: welcome sequences & abandoned cart.</p><div class="mt-4 flex gap-1 text-xs text-gray-500"><span class="bg-[#1e1e1e] px-2 py-1 rounded-full">11 templates</span></div></div>
+      </div>
+      <div class="mt-10 text-center text-sm text-gray-500">+ 80+ more templates: Notion, Slack, Discord, Calendly, Stripe, Typeform, etc.</div>
+    </div>
+  </section>
+
+  <!-- Questionnaire / Quiz Section (Dark) -->
+  <section id="quiz" class="px-6 md:px-10 lg:px-20 py-24 bg-[#0c0c0c]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="badge-dark"><i class="far fa-question-circle mr-1"></i> Smart questionnaire</span>
+        <h2 class="text-3xl font-bold mt-3 text-white">Find your perfect template match</h2>
+        <p class="text-gray-400 mt-2">Answer 3 quick questions — get personalized N8N workflow recommendations.</p>
+      </div>
+      <div class="questionnaire-card-dark p-6 md:p-8 transition-all">
+        <form id="quizForm" class="space-y-6">
+          <div>
+            <label class="font-medium text-gray-200 block mb-2">🎯 What's your main automation goal?</label>
+            <select id="qGoal" class="w-full border border-gray-700 rounded-2xl px-5 py-3 bg-[#0a0a0a] text-gray-200">
+              <option value="leadgen">Lead generation & CRM automation</option>
+              <option value="content">AI content creation & social media</option>
+              <option value="ecom">E-commerce / order processing</option>
+              <option value="scraping">Web scraping & data monitoring</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-medium text-gray-200 block mb-2">🛠️ Your technical level with n8n?</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="flex items-center gap-2 border border-gray-700 rounded-xl p-3 cursor-pointer hover:bg-[#1a1a1a] bg-[#0f0f0f]"><input type="radio" name="exp" value="beginner" class="accent-white"> <span class="text-gray-300">Beginner (need handholding)</span></label>
+              <label class="flex items-center gap-2 border border-gray-700 rounded-xl p-3 cursor-pointer hover:bg-[#1a1a1a] bg-[#0f0f0f]"><input type="radio" name="exp" value="intermediate" class="accent-white"> <span class="text-gray-300">Intermediate</span></label>
+              <label class="flex items-center gap-2 border border-gray-700 rounded-xl p-3 cursor-pointer hover:bg-[#1a1a1a] bg-[#0f0f0f]"><input type="radio" name="exp" value="advanced" class="accent-white"> <span class="text-gray-300">Advanced (customize deeply)</span></label>
+            </div>
+          </div>
+          <div>
+            <label class="font-medium text-gray-200 block mb-2">📦 Which apps do you use often? (pick top 2)</label>
+            <div class="flex flex-wrap gap-3 mt-1">
+              <label class="flex items-center gap-1 bg-[#151515] px-4 py-2 rounded-full text-sm text-gray-300"><input type="checkbox" value="notion" class="rounded bg-black"> Notion</label>
+              <label class="flex items-center gap-1 bg-[#151515] px-4 py-2 rounded-full text-sm text-gray-300"><input type="checkbox" value="googlesheets"> Google Sheets</label>
+              <label class="flex items-center gap-1 bg-[#151515] px-4 py-2 rounded-full text-sm text-gray-300"><input type="checkbox" value="slack"> Slack</label>
+              <label class="flex items-center gap-1 bg-[#151515] px-4 py-2 rounded-full text-sm text-gray-300"><input type="checkbox" value="airtable"> Airtable</label>
+              <label class="flex items-center gap-1 bg-[#151515] px-4 py-2 rounded-full text-sm text-gray-300"><input type="checkbox" value="hubspot"> HubSpot</label>
+            </div>
+          </div>
+          <button type="button" id="quizSubmitBtn" class="btn-primary-dark w-full py-3 font-semibold text-base mt-4">🔍 Show my recommended templates →</button>
+        </form>
+        <div id="quizResult" class="mt-8 p-5 bg-[#0f0f0f] rounded-2xl hidden transition-all border border-gray-800">
+          <div class="flex items-center gap-2 text-white font-semibold"><i class="fas fa-magic"></i> Based on your answers:</div>
+          <p id="recommendationText" class="text-gray-300 mt-2 text-sm"></p>
+          <div class="mt-3 flex gap-3 flex-wrap" id="recTags"></div>
+          <a href="#pricing" class="inline-block mt-4 text-sm font-medium border-b border-gray-500 text-gray-300 hover:text-white">Get full access to all 150+ templates →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCORDION FAQ SECTION (New) -->
+  <section id="faq" class="px-6 md:px-10 lg:px-20 py-24 bg-[#070707] border-t border-[#181818]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="badge-dark"><i class="fas fa-circle-info mr-1"></i> common questions</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-white">Frequently asked questions</h2>
+        <p class="text-gray-400 mt-2">Everything you need to know before grabbing the templates.</p>
+      </div>
+      <div class="bg-[#0f0f0f] rounded-3xl border border-[#222] p-1 md:p-6">
+        <div class="accordion-item" id="faq1">
+          <div class="accordion-trigger px-4">
+            <span>🤔 What exactly do I get with the 150+ N8N templates?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            You'll receive a complete Notion database with 150+ ready-to-import JSON files, organized by category (AI, CRM, scraping, e-commerce, etc.). Plus step-by-step video guides, documentation, and lifetime access to all future template additions.
+          </div>
+        </div>
+        <div class="accordion-item" id="faq2">
+          <div class="accordion-trigger px-4">
+            <span>⚙️ Do I need advanced coding skills to use these?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            Not at all. Each template is plug-and-play. You just import the JSON file into your n8n instance, add your API keys (like OpenAI, Google Sheets), and activate. Our video guides walk you through every step.
+          </div>
+        </div>
+        <div class="accordion-item" id="faq3">
+          <div class="accordion-trigger px-4">
+            <span>🔄 Will these templates work with self-hosted n8n or n8n.cloud?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            Yes! The templates are compatible with both self-hosted n8n (any version) and n8n cloud. We use standard nodes and webhooks, so you can run them anywhere.
+          </div>
+        </div>
+        <div class="accordion-item" id="faq4">
+          <div class="accordion-trigger px-4">
+            <span>💰 Is it a one-time payment or a subscription?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            One-time payment only. You pay once and get lifetime access to all current templates + every future update and new template we release. No subscription fees.
+          </div>
+        </div>
+        <div class="accordion-item" id="faq5">
+          <div class="accordion-trigger px-4">
+            <span>🛟 What if I need help with a specific workflow?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            We offer priority email support and access to a private Discord community where you can ask questions, share automations, and get help from other users and our team.
+          </div>
+        </div>
+        <div class="accordion-item" id="faq6">
+          <div class="accordion-trigger px-4">
+            <span>📈 How often are new templates added?</span>
+            <span class="accordion-icon"><i class="fas fa-chevron-down text-gray-400"></i></span>
+          </div>
+          <div class="accordion-content px-4">
+            We add 5–10 new templates every month based on user requests and trending automation needs. All updates are free for existing customers.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & CTA section (Dark Elegant) -->
+  <section id="pricing" class="px-6 md:px-10 lg:px-20 py-24 bg-[#0c0c0c] border-t border-[#1a1a1a]">
+    <div class="max-w-6xl mx-auto text-center">
+      <span class="badge-dark">⚡ one-time purchase</span>
+      <h2 class="text-4xl md:text-5xl font-bold mt-3 tracking-tight text-white">Lifetime access to <span class="underline decoration-white/30">150+ N8N templates</span></h2>
+      <div class="mt-8 max-w-2xl mx-auto bg-[#121212] rounded-3xl shadow-2xl p-8 border border-[#2a2a2a]">
+        <div class="text-5xl font-black text-white">INR 599<span class="text-lg font-medium text-gray-400"> / lifetime</span></div>
+        <p class="text-gray-400 mt-2">No subscription. Unlimited updates + new templates added monthly.</p>
+        <ul class="mt-6 space-y-3 text-left max-w-sm mx-auto">
+          <li class="flex gap-2 text-gray-300"><i class="fas fa-check-circle text-emerald-500"></i> Full library of 150+ JSON templates</li>
+          <li class="flex gap-2 text-gray-300"><i class="fas fa-check-circle text-emerald-500"></i> Step-by-step video guides + docs</li>
+          <li class="flex gap-2 text-gray-300"><i class="fas fa-check-circle text-emerald-500"></i> Lifetime Access</li>
+        </ul>
+        <div class="mt-8">
+          <a href="https://superprofile.bio/vp/n8n-forge-%E2%80%94-150--premium-automation-templates" class="btn-primary-dark inline-block px-10 py-3 text-lg font-semibold w-full sm:w-auto">Get Instant Access →</a>
+          <p class="text-[12px] text-gray-500 mt-4">Secure checkout • Instant download</p>
+        </div>
+      </div>
+      <p class="text-gray-500 text-sm mt-12 max-w-xl mx-auto">Join 1,200+ founders, marketers, and devs who saved 100+ hours of engineering.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#181818] py-12 px-6 text-center text-gray-500 text-sm">
+    <div class="flex justify-center gap-6 mb-4">
+      <span>© 2025 N8N Elite</span>
+      <!-- <span>Terms</span>
+      <span>Support</span> -->
+    </div>
+    <p>Built for automation builders — 150+ production-ready templates.</p>
+  </footer>
+
+  <script>
+    // Questionnaire logic
+    document.getElementById('quizSubmitBtn').addEventListener('click', function() {
+      const goal = document.getElementById('qGoal').value;
+      const expRadios = document.querySelectorAll('input[name="exp"]');
+      let expValue = 'intermediate';
+      for (let radio of expRadios) {
+        if (radio.checked) { expValue = radio.value; break; }
+      }
+      const appsChecked = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+      
+      let recommendation = '';
+      let tags = [];
+
+      if (goal === 'leadgen') {
+        recommendation = `🔥 Based on your lead gen focus, we recommend the "LeadScraper → HubSpot Enrichment" and "CRM Auto-Qualifier" templates. Perfect for ${expValue === 'beginner' ? 'plug-and-play setup' : 'advanced custom funnels'}.`;
+        tags = ['Lead Scoring Workflow', 'CRM Sync Pack', 'Email Enrichment'];
+      } else if (goal === 'content') {
+        recommendation = `📝 AI content automation templates will be game-changer: "Blog Post Writer (GPT+WordPress)", "LinkedIn Viral Thread Generator", and "SEO Meta Describer". ${appsChecked.includes('notion') ? 'Includes Notion content DB sync.' : ''}`;
+        tags = ['AI Writer Suite', 'Social Media Scheduler', 'Content Repurposer'];
+      } else if (goal === 'ecom') {
+        recommendation = `🛒 E-commerce automation flows: "Abandoned cart recovery (Shopify/Mailchimp)", "Order tracking + SMS alerts", "Inventory sync". ${appsChecked.length ? `Also compatible with ${appsChecked.join(', ')} integrations.` : 'Works with Stripe, WooCommerce.'}`;
+        tags = ['Abandoned Cart', 'Order Fulfillment', 'Inventory Monitor'];
+      } else {
+        recommendation = `🕸️ Web scraping templates: "SERP Scraper → Google Sheets", "Product price tracker", "News aggregator". ${expValue === 'advanced' ? 'You can easily modify output schemas.' : 'Ready to use with 1-click webhook.'}`;
+        tags = ['Dynamic Scraper', 'Data Pipeline', 'Monitor & Alert'];
+      }
+
+      if (appsChecked.includes('slack')) tags.push('Slack Notify');
+      if (appsChecked.includes('googlesheets')) tags.push('Sheets Logger');
+      if (appsChecked.includes('airtable')) tags.push('Airtable Sync');
+
+      document.getElementById('recommendationText').innerHTML = recommendation;
+      const tagsContainer = document.getElementById('recTags');
+      tagsContainer.innerHTML = tags.map(t => `<span class="bg-[#1a1a1a] border border-gray-700 rounded-full px-3 py-1 text-xs text-gray-300">${t}</span>`).join('');
+      document.getElementById('quizResult').classList.remove('hidden');
+      document.getElementById('quizResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    // Accordion logic
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      const trigger = item.querySelector('.accordion-trigger');
+      trigger.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+    // open first faq by default (optional)
+    if(document.querySelector('.accordion-item')) document.querySelector('.accordion-item').classList.add('active');
+
+    // default radio checked
+    window.onload = () => {
+      if(!document.querySelector('input[name="exp"]:checked')) {
+        document.querySelector('input[name="exp"][value="intermediate"]').checked = true;
+      }
+    }
+  </script>
+</body>
+</html>
